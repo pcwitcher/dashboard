@@ -4,10 +4,11 @@
 @import 'layout';
 
 /* Components */
-/*@import 'components/form_field';
+/*@import 'components/form_field';*/
+@import 'components/buttons';
 
 /* Sections */
-/*@import 'section/registration_form';
+@import 'sections/topbar';
 
-/* Pages / Views */
-/*@import 'pages/registration';*/
+/*Pages / Views*/
+@import 'pages/main';

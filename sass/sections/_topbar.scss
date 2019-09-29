@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  padding: 0;
+  background-color: $light;
+  background-color: $green;
+  border-bottom: 1px solid $gray-light;
+
+  ul.topbar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+
+    li.topbar_item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
