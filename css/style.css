@@ -347,10 +347,18 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -1153,28 +1161,62 @@ html {
   -ms-flex-align: center;
       align-items: center;
   top: 0;
-  height: 70px;
+  height: 60px;
   width: 100%;
   padding: 0;
   background-color: #f5f5f5;
-  background-color: #04ae00;
   border-bottom: 1px solid #e3e3e3;
 }
 
-.header ul.topbar {
+.header .topbar {
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
   list-style-type: none;
 }
 
-.header ul.topbar li.topbar_item {
+.header .topbar_item {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-left: 1px solid #e3e3e3;
+  position: relative;
+  font-size: 18px;
+}
+
+.header .topbar_button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border: none;
+  background: none;
+  padding: 19px 15px;
+  cursor: pointer;
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+}
+
+.header .topbar_button .icon-arrow-down-small {
+  font-size: 12px;
+  padding-left: 18px;
+  padding-top: 10px;
+}
+
+.header .topbar_name {
+  color: #56819f;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.header [class^='icon-'] {
+  padding: 0 10px 0 5px;
 }
 
 /*Pages / Views*/

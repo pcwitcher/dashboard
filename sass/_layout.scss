@@ -3,10 +3,18 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
+body {
+  font-family: $main-font;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+button {
+  font-family: $main-font;
 }
 
 .container {
