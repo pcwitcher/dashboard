@@ -25,7 +25,10 @@
     "unit-whitelist": null,
     "scss/at-extend-no-missing-placeholder": true,
     "scss/selector-no-redundant-nesting-selector": true,
-    "scss/no-duplicate-dollar-variables": true,
+    "scss/no-duplicate-dollar-variables": [true, {
+      "ignoreInsideAtRules": ["array", "if", "mixin"],
+      "ignoreInside": ["at-rule", "nested-at-rule"]
+    }],
     "media-feature-name-blacklist": [
       "^max-width",
       {

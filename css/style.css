@@ -347,10 +347,6 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 *,
 *::before,
 *::after {
@@ -1166,6 +1162,7 @@ button {
   padding: 0;
   background-color: #f5f5f5;
   border-bottom: 1px solid #e3e3e3;
+  z-index: 1;
 }
 
 .header .topbar {
@@ -1209,6 +1206,16 @@ button {
   padding-top: 10px;
 }
 
+.header .topbar_button .bell-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 30%;
+  right: 40%;
+  background: #f58220;
+}
+
 .header .topbar_name {
   color: #56819f;
   font-size: 14px;
@@ -1219,8 +1226,67 @@ button {
   padding: 0 10px 0 5px;
 }
 
+.menu {
+  background: #333333;
+  position: fixed;
+  z-index: 1;
+  width: 200px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  top: 0;
+  right: auto;
+  line-height: 40px;
+  text-align: left;
+  transition: all 0.5s;
+}
+
+.menu .logo {
+  padding: 20px 0 0 20px;
+}
+
+.menu .hamburger {
+  display: inline-block;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.menu .hamburger .menu_hamburger {
+  width: 25px;
+  height: 2px;
+  background-color: #999999;
+  margin: 6px 0;
+}
+
+.menu .hamburger .menu_hamburger:last-child {
+  margin: 2px 0;
+}
+
+.menu_links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu_link {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #999999;
+  font-weight: 300;
+  border-left: #333333 5px solid;
+}
+
+.menu .active {
+  border-left: #de5252 5px solid;
+  color: #e3e3e3;
+  background-color: #999999;
+}
+
 /*Pages / Views*/
 .dashboard-temple {
   max-width: 1280px;
+  font-family: "Roboto", sans-serif;
+  background: #e3e3e3;
 }
 /*# sourceMappingURL=style.css.map */

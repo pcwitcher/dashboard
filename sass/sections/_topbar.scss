@@ -9,6 +9,7 @@
   padding: 0;
   background-color: $light;
   border-bottom: 1px solid $gray-light;
+  z-index: 1;
 
   .topbar {
     display: flex;
@@ -39,6 +40,16 @@
         font-size: 12px;
         padding-left: 18px;
         padding-top: 10px;
+      }
+
+      .bell-dot {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: 30%;
+        right: 40%;
+        background: $button-orange;
       }
     }
 
