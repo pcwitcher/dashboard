@@ -1165,12 +1165,6 @@ button {
   z-index: 1;
 }
 
-@media (max-width: 576px) {
-  .header {
-    display: none;
-  }
-}
-
 .header .topbar {
   display: -ms-flexbox;
   display: flex;
@@ -1259,12 +1253,6 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 576px) {
-  .menu .hamburger {
-    padding-left: 10px;
-  }
-}
-
 .menu .hamburger .menu_hamburger {
   width: 25px;
   height: 2px;
@@ -1325,10 +1313,6 @@ button {
   font-weight: 400;
 }
 
-.menu .user h3:hover {
-  color: #cccccc;
-}
-
 .menu .user_menu {
   position: absolute;
   top: 50%;
@@ -1345,17 +1329,8 @@ button {
   padding-top: 10px;
 }
 
-@media (max-width: 576px) {
-  .sidebar {
-    width: 100vw;
-    height: 100vh;
-    background-color: #333333;
-  }
-  .logo_img,
-  .menu_links,
-  .user {
-    display: none;
-  }
+.menu.show {
+  width: 60px;
 }
 
 /*Pages / Views*/

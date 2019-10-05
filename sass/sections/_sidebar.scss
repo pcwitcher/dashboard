@@ -21,11 +21,6 @@
     padding-left: 30px;
     cursor: pointer;
 
-    @media (max-width: 576px) {
-      padding-left: 10px;
-    }
-
-
     .menu_hamburger {
       width: 25px;
       height: 2px;
@@ -84,10 +79,6 @@
 
     h3 {
       font-weight: 400;
-
-      &:hover {
-        color: lighten($gray-darkness, 20%);
-      }
     }
 
     &_menu {
@@ -108,17 +99,8 @@
   }
 }
 
-@media (max-width: 576px) {
-  .sidebar {
-    width: 100vw;
-    height: 100vh;
-    background-color: $dark;
-  }
-
-
-  .logo_img,
-  .menu_links,
-  .user {
-    display: none;
-  }
+.menu.show {
+  width: 60px;
 }
+
+@media (max-width: 576px) {}
