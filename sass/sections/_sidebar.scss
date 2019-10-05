@@ -21,11 +21,20 @@
     padding-left: 30px;
     cursor: pointer;
 
+    @media (max-width: 576px) {
+      padding-left: 10px;
+    }
+
+
     .menu_hamburger {
       width: 25px;
       height: 2px;
       background-color: $gray-darkness;
       margin: 6px 0;
+
+      :hover>& {
+        background-color: lighten($gray-darkness, 50%);
+      }
 
       &:last-child {
         margin: 2px 0;
@@ -36,22 +45,80 @@
   &_links {
     list-style-type: none;
     padding-left: 0;
-
-    li {}
   }
 
   &_link {
+    display: block;
     padding-left: 20px;
     text-decoration: none;
     color: $gray-darkness;
     font-weight: 300;
     border-left: $dark 5px solid;
+    cursor: pointer;
   }
 
-  .active {
-    border-left: $negative-not-hover 5px solid;
+  .active,
+  .menu_link:hover {
+    border-left: $button-orange 5px solid;
     color: $gray-light;
-    background-color: $gray-darkness;
+    background-color: lighten($dark, 10%);
   }
 
+  [class^='icon-'] {
+    vertical-align: middle;
+  }
+
+  span.menu_page {
+    vertical-align: middle;
+    padding-left: 20px;
+  }
+
+  .user {
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 14px;
+    color: $gray-darkness;
+    border-top: 1px solid lighten($dark, 10%);
+
+    h3 {
+      font-weight: 400;
+
+      &:hover {
+        color: lighten($gray-darkness, 20%);
+      }
+    }
+
+    &_menu {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 10px;
+      color: $link;
+
+      &:hover {
+        color: $link-hover;
+      }
+    }
+
+    &_picture {
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark;
+  }
+
+
+  .logo_img,
+  .menu_links,
+  .user {
+    display: none;
+  }
 }

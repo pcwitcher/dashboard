@@ -1165,6 +1165,12 @@ button {
   z-index: 1;
 }
 
+@media (max-width: 576px) {
+  .header {
+    display: none;
+  }
+}
+
 .header .topbar {
   display: -ms-flexbox;
   display: flex;
@@ -1253,11 +1259,21 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 576px) {
+  .menu .hamburger {
+    padding-left: 10px;
+  }
+}
+
 .menu .hamburger .menu_hamburger {
   width: 25px;
   height: 2px;
   background-color: #999999;
   margin: 6px 0;
+}
+
+:hover > .menu .hamburger .menu_hamburger {
+  background-color: white;
 }
 
 .menu .hamburger .menu_hamburger:last-child {
@@ -1270,17 +1286,76 @@ button {
 }
 
 .menu_link {
+  display: block;
   padding-left: 20px;
   text-decoration: none;
   color: #999999;
   font-weight: 300;
   border-left: #333333 5px solid;
+  cursor: pointer;
 }
 
-.menu .active {
-  border-left: #de5252 5px solid;
+.menu .active,
+.menu .menu_link:hover {
+  border-left: #f58220 5px solid;
   color: #e3e3e3;
-  background-color: #999999;
+  background-color: #4d4d4d;
+}
+
+.menu [class^='icon-'] {
+  vertical-align: middle;
+}
+
+.menu span.menu_page {
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+.menu .user {
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999999;
+  border-top: 1px solid #4d4d4d;
+}
+
+.menu .user h3 {
+  font-weight: 400;
+}
+
+.menu .user h3:hover {
+  color: #cccccc;
+}
+
+.menu .user_menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 10px;
+  color: #56819f;
+}
+
+.menu .user_menu:hover {
+  color: #ffa200;
+}
+
+.menu .user_picture {
+  padding-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333;
+  }
+  .logo_img,
+  .menu_links,
+  .user {
+    display: none;
+  }
 }
 
 /*Pages / Views*/
