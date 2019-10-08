@@ -43,7 +43,7 @@
     <nav class="menu" id="menu">
       <div class="logo">
         <a href="#"><img class="logo_img" src="./images/logo.png" alt="logo" /></a>
-        <a href="#menu" id="toggle" class="hamburger">
+        <a href="#menu" class="hamburger">
           <div class="menu_hamburger"></div>
           <div class="menu_hamburger"></div>
           <div class="menu_hamburger"></div>
@@ -95,8 +95,158 @@
       </div>
     </nav>
   </section>
-  <!-----------GENERAL------------>
-  <section class="general"></section>
+
+  <main class="main">
+
+    <!-----------GENERAL------------>
+    <div class="general">
+      <section class="section">
+        <h1 class=section_header>general statistic</h1>
+        <div class="date_section">
+          <div class="date">
+            <div class="date_inputs">
+              <div class="date_start">16.05.2016</div>
+              <div class="date_end">16.05.2016</div>
+              <div class="date_icon">
+                <i class="icon-calendar"></i>
+              </div>
+            </div>
+            <button class="btn_refresh">
+              <i class="icon-refresh"></i>
+            </button>
+          </div>
+        </div>
+        <div class="general_result container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="general_text">Visit Signups <span class="general_no">124</span></p>
+              <p class="general_text">FTD <span class="general_no">445</span></p>
+            </div>
+            <div class="col-md-6">
+              <p class="general_text">New deposit <span class="general_no">564</span></p>
+              <p class="general_text">Turn over <span class="general_no">432</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="graphs container">
+          <h2 class="graphs_header">Earnings chart</h2>
+          <canvas id="myChart"></canvas>
+        </div>
+      </section>
+      <section class="section gen_links">
+        <h1 class="section_header">links</h1>
+        <button class="btn_orange">+ add new</button>
+        <div class="scroll_wrapper">
+          <table class="links_table container">
+            <tbody>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Home page</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.homepage.com">http://www.homepage.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Currently offer</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.currently.com">http://www.currently.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Blurpix</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.blurpix.com">http://www.blurpix.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Your Site</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.yoursite.com">http://www.yoursite.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Google</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.google.com">http://www.google.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Facebook</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.facebook.com">http://www.facebook.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Dashboard</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.dashboard.com">http://www.dashboard.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Blurax</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.blurax.com">http://www.blurax.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Piece of Wine</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.pieceofwine.com">http://www.pieceofwine.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+              </tr>
+              <tr class="links_row">
+                <td class="links_line"><span class="links_name">Twitter</span></td>
+                <td class="links_line">
+                  <a class="links_site" href="http://www.twitter.com">http://www.twitter.com</a>
+                </td>
+                <td class="links_line links_icons">
+                  <a class="links_icon" href="#"><i class="icon-links"></i></a>
+                  <a class="links_icon" href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="btn_orange">+ add new</button>
+      </section>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
