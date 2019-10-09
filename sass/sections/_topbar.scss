@@ -63,4 +63,15 @@
   [class^='icon-'] {
     padding: 0 10px 0 5px;
   }
+
+  @media (max-width: 768px) {
+
+    .topbar_money,
+    .topbar_name,
+    .icon-arrow-down-small {
+      display: none;
+    }
+
+
+  }
 }

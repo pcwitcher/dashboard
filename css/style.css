@@ -1276,6 +1276,14 @@ button {
   padding: 0 10px 0 5px;
 }
 
+@media (max-width: 768px) {
+  .header .topbar_money,
+  .header .topbar_name,
+  .header .icon-arrow-down-small {
+    display: none;
+  }
+}
+
 .menu {
   background: #333333;
   position: fixed;
@@ -1293,13 +1301,20 @@ button {
   transition: all 0.5s;
 }
 
+.menu .mobile {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
 .menu .logo {
   padding: 20px 0 0 20px;
 }
 
 .menu .hamburger {
   display: inline-block;
-  padding-left: 30px;
+  padding: 20px;
   cursor: pointer;
 }
 
@@ -1308,14 +1323,6 @@ button {
   height: 2px;
   background-color: #999999;
   margin: 6px 0;
-}
-
-:hover > .menu .hamburger .menu_hamburger {
-  background-color: white;
-}
-
-.menu .hamburger .menu_hamburger:last-child {
-  margin: 2px 0;
 }
 
 .menu_links {
@@ -1381,19 +1388,28 @@ button {
 
 @media (max-width: 576px) {
   .menu {
-    width: 100%;
-    height: 10%;
+    width: 60px;
+    height: 53px;
+    background: #f5f5f5;
+    top: -5px;
   }
   .menu .menu_links,
-  .menu .user {
+  .menu .user,
+  .menu .logo {
     display: none;
   }
   .menu.show {
     height: 100%;
+    width: 100%;
+    background: #333333;
   }
   .menu.show .menu_links,
   .menu.show .user {
     display: block;
+  }
+  .main {
+    margin: 80px 0 0 20px;
+    width: calc(100% - 40px);
   }
 }
 
@@ -1587,6 +1603,18 @@ button {
   .links_icons {
     opacity: 1;
   }
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
 }
 
 /*Pages / Views*/

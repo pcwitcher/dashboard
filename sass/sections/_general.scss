@@ -171,3 +171,15 @@
     }
   }
 }
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}
